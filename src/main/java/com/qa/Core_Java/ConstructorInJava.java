@@ -15,6 +15,9 @@ public class ConstructorInJava {
 		System.out.println("two parameters constructor Name--->" + name + "age--->" + age);
 
 	}
+//	public void display() {
+//		System.out.println("name--->"+name+"age--->"+age);
+//	}
 
 	public static void main(String[] args) {
 		ConstructorInJava c1 = new ConstructorInJava();

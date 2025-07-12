@@ -3,6 +3,7 @@ package com.qa.Core_Java;
 
 // i covered variables, this, constructor,
 public class Person {
+	
 	String name; // instance variable
 	int age;
 	int empid;
@@ -24,6 +25,7 @@ public class Person {
 		this.showdetails();
 
 	}
+	
 
 	public void userDetails() {
 		int a = 28; // local variables
