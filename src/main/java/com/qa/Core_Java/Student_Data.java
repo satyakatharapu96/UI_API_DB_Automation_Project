@@ -66,11 +66,10 @@ public class Student_Data {
 		System.out.println("---------------------------");
 		Student_Data s2 = new Student_Data(30, "Kesava Prakash", 35);
 		s2.showdetails();
-		s2.callProcess(); // received objectcom.qa.Core_Java.Student_Data@72ea2f77
-		// “From s2, return yourself as an object, and assign that to s3.”
-//		Now, both s2 and s3 point to the same object in memory.
-		System.out.println("Accessed through getInstance():");
-		Student_Data s3 = s2.getInstance(); //
+		s2.callProcess();
+		// Getting current instance of s2 and assigning it to s3
+		System.out.println("Accessed through getInstance():");//
+		Student_Data s3 = s2.getInstance(); //// Now s3 and s2 refer to the same object
 		s3.display();
 		
 		
