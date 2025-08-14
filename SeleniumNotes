@@ -1,0 +1,108 @@
+1. what is selenium
+----------------------
+Selenium is a open-source automation tool to automate the  web browsers
+
+//Features of selenium
+-->it supports different programming languages
+--->it supports cross-browser testing(Chrome,FireFox,edge)
+--->it supports cross- platform testing(windows,Mac,Linux)
+---> it supports parallel testing  via tools like TestNG
+note:parallel testing means executing the  multiple test cases  at the same time
+it saves time
+---->Can be integrated with CI/CD tools like Jenkins.
+
+components in selenium
+--------------------------
+1.Selenium WebDriver--- selenium webdriver is an interface, it automate browser actions like clicking,navigating,typing
+---> it directly interact with browsers using it's native support
+
+2.Selenium IDE---- it is a chrome/firefox extension, it is used for play and record tool for beginners
+note:Records user actions as you perform them on a web app.
+Creates test scripts automatically 
+
+3.Selenium Grid---- parallel execution
+note:parallel execution--->
+Allows you to run the same test on different machines and different browsers at the same time.
+Speeds up test execution.
+real time use----->Used in CI/CD pipelines where the same tests need to be run across Chrome, Firefox, and Edge simultaneously.
+
+4.selenium RC---replaced by WebDriver
+Allowed execution of test scripts in multiple browsers.
+it is deprecated because it's slow and less efficient then  WebDriver
+
+
+WebDriver Architecture
+----------------------
+WebDriver Architecture is a client-server model,it has four components
+1.Selenium Client Library---
+this is the language binding library, we use to write the code(java)
+2.Selenium JSON protocol--- it communicates with client code and browsers.
+This protocol helps convert our code into a format the browser understands, using HTTP requests.
+3.Browsers--->The driver receives commands from Selenium and forwards them to the actual browser.
+4.real browsers--->These are the actual browsers where the tests run. The driver controls them using native automation APIs.
+so overall,
+when we run a script, Selenium WebDriver sends commands via the JSON Wire Protocol to the browser driver, which then interacts with the real browser."
+
+Flow (in simple words):
+--------------------------------
+I write Selenium code in Java using the WebDriver API.
+This code sends requests (as JSON) to the browser driver.
+The driver talks to the browser using native browser APIs.
+The browser performs the action and sends a response back.
+
+visually understands
+------------------------
+  [ Selenium Code (Java/Python/C#) ]
+                    ↓
+   [ Selenium Client Library ]
+                    ↓
+   [ JSON Wire Protocol ]
+                    ↓
+   [ Browser Driver (e.g., ChromeDriver) ]
+                    ↓
+    [ Real Browser (e.g., Chrome) ]
+
+-----------------------------------------------------
+Locators in selenium
+-----------------------
+Locators are used to find and interact with WebElements on a web page
+
+
+
+
+
+
+
+
+
+Topics
+----------
+.JavaScriptExecutor,upload files by js
+2.ReadDataFromXL/JS/CSV and Write Data
+3.Handle calener/Date pickers
+4.handle Dynamic WebTable,pagination WebTable
+7.HeadLess Testing, SSL certificate
+--------------------------------------------------
+5.Handle hidden dropdowns
+6.Handling sliders
+7.HeadLess Testing, SSL certificate
+8.Blocking ads, Enable browser extensions At runtime, running test in inco mode
+9.Handle SVG Elements
+10.Handling Shadow DoM Elements
+11.WebDriver architecture
+12.desired capabilities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
